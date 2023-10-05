@@ -1,0 +1,35 @@
+#plane {
+  animation-name: aterrizaje;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  position: relative;
+  left: 17%;
+}
+
+#svgContainer {
+  margin: 0 auto;
+}
+
+@keyframes aterrizaje {
+  0% {
+    transform: translateY(-100px) scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+body {
+  animation-name: changeColor;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes changeColor {
+  from {
+    background-color: antiquewhite;
+  }
+  to {
+    background-color: #8ecae6;
+  }
+}

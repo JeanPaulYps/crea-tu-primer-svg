@@ -1,0 +1,37 @@
+svg {
+  height: 700px;
+  width: auto;
+}
+
+#CreditCardForeground {
+  transform: translateY(-32px);
+  opacity: 0;
+  animation-name: rotateCard;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+#CreditCardMiddle {
+  transform: translateY(-32px);
+  opacity: 0;
+  animation-name: rotateCard;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+#CreditCardBack {
+  transform: translateY(-32px);
+  animation: rotateCard 2s 1 forwards;
+  opacity: 0;
+}
+
+@keyframes rotateCard {
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

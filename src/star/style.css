@@ -1,0 +1,32 @@
+#estrellaAzul {
+    animation-name: rotation;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+  
+  #estrellaDurazno {
+    animation-name: rotation2;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+  
+  html {
+    background-color: aquamarine;
+  }
+  
+  @keyframes rotation {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes rotation2 {
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+  
